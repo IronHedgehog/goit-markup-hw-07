@@ -868,21 +868,21 @@ margin-right: 30px;
   border: none;
 }
 
-.partfolio-card-text {
+.portfolio-card-text {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.partfolio-image-name {
+.portfolio-image-name {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   color: var(--title-text);
 }
 
-.partfolio-image-text {
+.portfolio-image-text {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -900,13 +900,13 @@ margin-right: 30px;
   margin-left: 8px;
 }
 
-.partfolio-item-list {
+.portfolio-item-list {
   flex-wrap: wrap;
   margin-bottom: -30px;
   margin-right: -30px;
 }
 
-.partfolio-list-item {
+.portfolio-list-item {
   text-decoration: none;
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
@@ -915,21 +915,21 @@ margin-right: 30px;
   border: 1px solid var(--partfolio-border);
 }
 
-.partfolio-list-item:hover .partfolio-image-text-up, .partfolio-list-item:focus .partfolio-image-text-up {
+.portfolio-list-item:hover .portfolio-image-text-up {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: translateY(0%);
 }
 
-.partfolio-link {
+.portfolio-link {
   text-decoration: none;
 }
 
-.partfolio-img-wrap {
+.portfolio-img-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.partfolio-image-text-up {
+.portfolio-image-text-up {
   position: absolute;
   top: 0;
   left: 0;

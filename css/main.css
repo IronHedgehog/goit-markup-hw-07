@@ -107,17 +107,14 @@ body {
   font-size: 26px;
   line-height: 1.1;
   letter-spacing: 0.03em;
-}
-
-.web-logo {
   color: var(--accent);
 }
 
-.studio-logo-header {
+.logo--black {
   color: var(--title-text);
 }
 
-.studio-logo-fotter {
+.logo--white {
   color: var(--main-bg);
 }
 
@@ -125,7 +122,11 @@ body {
   border-bottom: 1px solid var(--header-borderline);
 }
 
-.navigation-list {
+.navigation-menu {
+  display: flex;
+}
+
+.navigation-menu__list {
   display: flex;
   margin-right: 305px;
   list-style: none;
@@ -137,12 +138,12 @@ body {
   color: var(--title-text);
 }
 
-.nav-item + .nav-item {
+.navigation-menu__item + .navigation-menu__item {
   margin-left: 50px;
 }
 
 /* :not(:last-child) */
-.nav-link {
+.navigation-menu__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -157,7 +158,7 @@ body {
   margin-left: auto;
 }
 
-.contacts-item {
+.contacts-list__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,30 +172,14 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contacts-item + .contacts-item {
+.contacts-list__item + .contacts-list__item {
   margin-left: 30px;
 }
 
 /* .contacts-item:not(:last-child) {
     margin-left: 30px;
 } */
-.header-icon-mail {
-  width: 16px;
-  height: 12px;
-  fill: currentColor;
-  order: -1;
-  margin-right: 10px;
-}
-
-.header-icon-phone {
-  width: 10px;
-  height: 16px;
-  fill: currentColor;
-  order: -1;
-  margin-right: 10px;
-}
-
-.contacts-link {
+.contacts-list__link {
   display: flex;
   margin-right: 0px;
   padding-top: 32px;
@@ -202,24 +187,20 @@ body {
   color: var(--main-text);
 }
 
-.header-icons-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header-icons-items {
+.contacts-list__icon-mail {
   width: 16px;
   height: 12px;
+  fill: currentColor;
+  order: -1;
+  margin-right: 10px;
 }
 
-.header-icons-items + .header-icons-items {
-  margin-left: 10px;
-}
-
-.header-icons {
-  width: 100%;
-  height: 100%;
+.contacts-list__icon-phone {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  order: -1;
+  margin-right: 10px;
 }
 
 .bottom-line::after {
@@ -234,7 +215,19 @@ body {
   left: 0px;
 }
 
-.partfolio-bottom-line::after {
+.navigation-menu__bottom-line--long::after {
+  display: block;
+  content: "";
+  height: 4px;
+  width: 48px;
+  background-color: var(--accent);
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.navigation-menu__bottom-line--longer::after {
   display: block;
   content: "";
   height: 4px;

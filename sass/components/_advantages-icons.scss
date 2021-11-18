@@ -1,4 +1,19 @@
-.advantage-list-item{
+.pseudo-icon{
+  &::before {
+    display: block;
+    content: '';
+    height: 120px;
+    width: 270px;
+    margin-bottom: 30px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+  }
+}
+
+.advantage-list__item{
     &::before {
       display: block;
       content: '';
@@ -12,26 +27,26 @@
       background-size: auto;
   }
 }
-  
-  .antenna{
+
+  .advantage-list__antenna{
     &::before {
       background-image: url(../images/advantage-svg/antenna.svg);
   }
 }
   
-  .clock{
+  .advantage-list__clock{
     &::before {
       background-image: url(../images/advantage-svg/clock.svg);
   }
 }
   
-  .diagram{
+  .advantage-list__diagram{
     &::before {
       background-image: url(../images/advantage-svg/diagram.svg);
   }
 }
   
-  .astronaut {
+  .advantage-list__astronaut {
     &::before {
       background-image: url(../images/advantage-svg/astronaut.svg);
   }

@@ -9,8 +9,10 @@
     height: 92px;
   }
   
-  .clients-list-item + .clients-list-item {
-    margin-left: 30px;
+  .clients-list-item {
+    & + .clients-list-item {
+      margin-left: 30px;
+    }
   }
   
   .clients-link {

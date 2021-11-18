@@ -31,11 +31,13 @@
     fill: currentColor;
   }
   
-  .social-link:hover,
-  .social-link:focus {
-    background-color: var(--accent);
-    color: var(--soc-link-h);
+  .social-link{
+    &:hover,
+    &:focus {
+      background-color: var(--accent);
+      color: var(--soc-link-h);
   }
+}
   // ============================================ FOOTER ============================= //
   
   .footer-social-list {
@@ -81,7 +83,10 @@
     fill: currentColor;
   }
   
-  .social-link-footer:hover,
-  .social-link-footer:focus {
-    background-color: var(--accent);
+  
+  .social-link-footer{
+    &:hover,
+    &:focus {
+      background-color: var(--accent);
+  }
   }

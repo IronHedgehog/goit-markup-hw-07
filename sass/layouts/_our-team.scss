@@ -15,9 +15,11 @@
     background-color: var(--main-bg);
   }
   
-  .our-team-cards + .our-team-cards {
-    margin-left: 30px;
+  .our-team-cards{
+    & + .our-team-cards {
+      margin-left: 30px;
   }
+}
   
   /*  .our-team-cards:not(:last-child){
   margin-right: 30px;

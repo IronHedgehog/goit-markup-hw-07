@@ -22,11 +22,12 @@
     border-radius: 50%;
     cursor: pointer;
     transition: fill 250ms linear, cursor 250ms linear;
+      &:hover{
+        fill: var(--accent);
+        cursor: pointer
+      }
   }
-  .modal-close:hover{
-    fill: var(--accent);
-    cursor: pointer
-  }
+
   .icon-close {
     position: absolute;
     top: 5px;

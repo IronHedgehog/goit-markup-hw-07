@@ -1,32 +1,39 @@
-.advantage-list-item::before {
-    display: block;
-    content: '';
-    height: 120px;
-    width: 270px;
-    margin-bottom: 30px;
-    background: #f5f4fa;
-    border-radius: 4px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
+.advantage-list-item{
+    &::before {
+      display: block;
+      content: '';
+      height: 120px;
+      width: 270px;
+      margin-bottom: 30px;
+      background: #f5f4fa;
+      border-radius: 4px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto;
   }
+}
   
-  .antenna::before {
-    background-image: url(../images/advantage-svg/antenna.svg);
+  .antenna{
+    &::before {
+      background-image: url(../images/advantage-svg/antenna.svg);
   }
+}
   
-  .clock::before {
-    background-image: url(../images/advantage-svg/clock.svg);
+  .clock{
+    &::before {
+      background-image: url(../images/advantage-svg/clock.svg);
   }
+}
   
-  .diagram::before {
-    background-image: url(../images/advantage-svg/diagram.svg);
+  .diagram{
+    &::before {
+      background-image: url(../images/advantage-svg/diagram.svg);
   }
+}
   
-  .astronaut::before {
-    background-image: url(../images/advantage-svg/astronaut.svg);
+  .astronaut {
+    &::before {
+      background-image: url(../images/advantage-svg/astronaut.svg);
   }
+}
   
-  /* .contacts-item:not(:last-child) {
-  margin-left: 30px;
-  } */

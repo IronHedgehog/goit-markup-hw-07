@@ -14,10 +14,11 @@
     outline: none;
     padding: 12px;
     transition: border-color 250ms linear;
+    &:focus{
+      border-color: var(--accent);
+    }
   }
-  .footer-form-input:focus {
-    border-color: var(--accent);
-  }
+
 // =========================================================== MODAL ========================================================//
 
 .form-padding {
@@ -80,14 +81,14 @@
   padding-right: 15px;
   outline: none;
   transition: border-color 250ms linear;
-}
-
-.form-input:focus {
-  border-color: var(--accent);
-}
-
-.form-input:focus + .form-icons {
-  fill: var(--accent);
+  &:focus{
+    border-color: var(--accent);
+  }
+  &:focus {
+    + .form-icons {
+      fill: var(--accent);
+    }
+  }
 }
 
 .form-textarea {
@@ -101,11 +102,12 @@
   border-radius: 4px;
   outline: none;
   transition: border-color 250ms linear;
+    &:focus{
+      border-color: var(--accent);
+    }
 }
 
-.form-textarea:focus {
-  border-color: var(--accent);
-}
+
 
 .form-icons {
   position: absolute;
@@ -134,10 +136,10 @@
   fill: #ffffff;
 }
 
-.check-text span {
+.check-text__svg{
   width: 15px;
   height: 15px;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   border-radius: 2px;
   margin-right: 5px;
   display: flex;
@@ -149,8 +151,21 @@
   padding-left: 5px;
   color: var(--accent);
 }
-.form-check:checked + .check-text span {
-  background-color: var(--accent);
-  border: none;
+.form-check{
+  &:checked + .check-text span{
+        background-color: var(--accent);
+        border: none;
+  }
 }
+
+// .form-check{
+//     &:checked {
+//         + .check-text{
+//           span{
+//             background-color: var(--accent);
+//             border: none;
+//       } 
+//     }
+//   }
+// }
 

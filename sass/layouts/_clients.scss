@@ -31,9 +31,11 @@
     fill: currentColor;
   }
   
-  .clients-link:focus,
-  .clients-link:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    cursor: pointer;
+  .clients-link{
+    &:focus,
+    &:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      cursor: pointer;
   }
+}
